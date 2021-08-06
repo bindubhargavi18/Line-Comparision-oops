@@ -3,8 +3,7 @@ class LineComparision
 {
 	public static void main(String[] args)
 	{
-		LineLength line=new LineLength();
-		int x1,x2,y1,y2;	
+		int x1,x2,y1,y2;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter line1 co-ordinates:");
 		System.out.println("Enter x1:");
@@ -15,7 +14,9 @@ class LineComparision
 		y1=sc.nextInt();
 		System.out.println("Enter y2:");
 		y2=sc.nextInt();
-		System.out.printf("length of line1:%.2f \n",line.lengthOfLine1(x1,x2,y1,y2));
+		LineLength line=new LineLength();
+		double l1=line.length1(x1,x2,y1,y2);
+		System.out.printf("length of line1:%.2f \n",l1);
 
 		System.out.println("Enter line2 co-ordinates:");
 		System.out.println("Enter x1:");
@@ -26,7 +27,9 @@ class LineComparision
 		y1=sc.nextInt();
 		System.out.println("Enter y2:");
 		y2=sc.nextInt();
-		System.out.printf("length of line2:%.2f \n",line.lengthOfLine2(x1,x2,y1,y2));
-		line.equals();
+		double l2=line.length2(x1,x2,y1,y2);
+		System.out.printf("length of line2:%.2f \n",l2);
+		line.equality();
+		
 	}
 }
