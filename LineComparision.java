@@ -30,6 +30,5 @@ class LineComparision
 		double l2=line.length2(x1,x2,y1,y2);
 		System.out.printf("length of line2:%.2f \n",l2);
 		line.equality();
-		
 	}
 }
