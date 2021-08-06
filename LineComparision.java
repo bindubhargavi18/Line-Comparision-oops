@@ -14,7 +14,7 @@ class LineComparision
 		y1=sc.nextInt();
 		System.out.println("Enter y2:");
 		y2=sc.nextInt();
-		LineLength line=new LineLength();
+		ComparingLines line=new ComparingLines();
 		double l1=line.length1(x1,x2,y1,y2);
 		System.out.printf("length of line1:%.2f \n",l1);
 
@@ -29,6 +29,6 @@ class LineComparision
 		y2=sc.nextInt();
 		double l2=line.length2(x1,x2,y1,y2);
 		System.out.printf("length of line2:%.2f \n",l2);
-		line.equality();
+		line.compareLines();
 	}
 }
